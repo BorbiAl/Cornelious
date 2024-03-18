@@ -1,19 +1,24 @@
 body{
     color: #8e9194;
     background-color: #f4f6f9;
+    align-content: center;
 }
 .avatar-xl img {
     width: 110px;
+    align-items: center;
 }
 .rounded-circle {
     border-radius: 50% !important;
+    align-items: center;
 }
 img {
     vertical-align: middle;
     border-style: none;
+    align-items: center;
 }
 .text-muted {
     color: #aeb0b4 !important;
+    align-items: center;
 }
 .text-muted {
     font-weight: 300;
