@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+a:visited,a:active,a:link{
+    color: #1FD988;
+}
+body{
+    background-image:url("/Website/static/images/background.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-y: calc(-5%);
+    background-color: #1FD988;
+}
+.main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#B9BBBE;
+}
+.login-box{
+    height: 50vh;
+    width: 40vw;
+    background-color:#36393F;
+    display: flex;
+    border-radius: 2vw;
+    padding-left:2.5%;
+    padding-right: 2.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: none;
+    outline: none;
+}
+.input-field{
+    height: 10%;
+    width: auto;
+    background-color: #202225;
+    resize: none;
+    font-size: 1.5rem;
+    padding: 1%;
+    color:#B9BBBE;
+}
+.login-button{
+    height: 7vh;
+    width: auto;
+    background-color:#1FD988;
+    font-size: 1.5rem;
+    color: #202225;
+    border-radius: 0.5vw;
+}
+p{
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 1.8rem;
+}
