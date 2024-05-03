@@ -29,7 +29,7 @@ body{
     color:#B9BBBE;
 }
 .login-box{
-    height: 50vh;
+    height: 75vh;
     width: 40vw;
     background-color:#36393F;
     display: flex;
@@ -44,7 +44,7 @@ body{
     outline: none;
 }
 .input-field{
-    height: 10%;
+    height: 5vh;
     width: auto;
     background-color: #202225;
     resize: none;
