@@ -12,10 +12,7 @@ a:visited,a:active,a:link{
 }
 body{
     background-image:url("/Website/static/images/background.png");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position-y: calc(-5%);
-    background-color: #1FD988;
+    background-size: 63%;
 }
 .main{
     position: absolute;
