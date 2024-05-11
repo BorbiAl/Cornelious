@@ -63,6 +63,13 @@ p{
 h1{
     font-size: 1.8rem;
 }
+header{
+    background-color: rgb(252, 252, 252);
+    
+}
+.header a:visited,a:active,a:link{
+    color: black !important;
+}
 .header__content {
     display: flex;
     justify-content: space-between;
