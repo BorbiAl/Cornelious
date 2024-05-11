@@ -12,13 +12,13 @@ a:visited,a:active,a:link{
 }
 body{
     background-image:url("../images/background.png");
-    background-color: #1FD988;
+    background-size: 63%;
 }
 .main{
     position: absolute;
-    top: 0;
+    top: 10%;
     left: 0;
-    height: 100%;
+    height: 90%;
     width: 100%;
     display: flex;
     justify-content: center;
