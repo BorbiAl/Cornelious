@@ -86,9 +86,17 @@ header{
     display:flex;
     column-gap: 2rem;
 }
-a {
-    text-decoration: none;
+.header-link{
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 0px;
+    text-underline-offset: 0.3rem;
     color: black;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+}
+.main a{
+    text-decoration: none;
     font-size: 1.1rem;
 }
 .Logo {
