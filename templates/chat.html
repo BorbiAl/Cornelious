@@ -7,23 +7,39 @@
     <title>Chat</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__content">
-            <a href="Home.html"><img src="/static/images/Logo.png" class="Logo"></a>
-            <nav>
-                <ul class="nav__list">
-                    <li>
-                        <a href="support.html">Support</a>
-                    </li>
-                    <li>
-                        <a href="About.html">About</a>
-                    </li>
-                    <li>
-                        <a href="login.html">Login/Register</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <ul class="chat__list">
+        <li class="chat__item">
+            <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
+            <p>Sigmalion Sigmov</p>
+        </li>
+    </ul>
+    <div class="chat__window">
+        <ul class="chat__messages">
+            <li class="chat__message_y">
+                <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
+                <p>Hey, how are you?</p>
+            </li>
+            <li class="chat__message_o">
+                <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
+                <p>Fine, you?</p>
+            </li>
+            <li class="chat__message_y">
+                <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
+                <p>Same, you got plans for tonight?</p>
+            </li>
+            <li class="chat__message_o">
+                <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
+                <p>No, wanna hangout?</p>
+            </li>
+            <li class="chat__message_y">
+                <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
+                <p>Yes, I'll call you in a minute.</p>
+            </li>
+        </ul>
+        <form class="chat__form">
+            <input type="text" class="chat__input" placeholder="Type a message...">
+            <button class="chat__button" type="submit">Send</button>
+        </form>
+    </div>
 </body>
 </html>
