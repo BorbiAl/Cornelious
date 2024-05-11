@@ -41,14 +41,14 @@ body {
 }
 .nav__list{
     list-style: none;
-    margin-right: 40rem;
+    margin-right: 2rem;
     display:flex;
     column-gap: 2rem;
 }
 a {
     text-decoration: none;
     color: black;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 .Logo {
     height: 100%;
