@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-    background-image: url("/Website/static/images/background.png");
+    background-image: url("/static/images/background.png");
     background-size: 25%;
     position: fixed;
     width: 100%;
