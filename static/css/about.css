@@ -71,7 +71,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 55rem;
+    height: 60rem;
     width: 100%;
     transition: all 0.5s ease-in-out;
 }
@@ -83,7 +83,7 @@ a {
     left: 50%;
     transform: translate(-50%, 0);
     transform: translate(-50%, -50%);
-    height: 100rem;
+    height: 120rem;
     width: 100%;
     transition: all 0.5s ease-in-out;
 }
@@ -106,4 +106,23 @@ a {
     right: 7rem;
     height: 65vh;
     border-radius: 5%;
+}
+.box3{
+    border-radius: 13%;
+    margin-top: 22rem;
+    background: #595959;
+    transform: translate(35%, 0);
+    height: 30rem;
+    width: 60%;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 10%;
+}
+.box3 h1{
+    font-weight: normal !important; 
+}
+.box3 img{
+    height: 22rem;
+    border-radius: 7%;
+    left: 25rem;
+    top: 4rem;
 }
