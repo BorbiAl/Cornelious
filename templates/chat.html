@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8 strict">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/static/css/chat-style.css">
     <title>Chat</title>
@@ -9,37 +9,37 @@
 <body>
     <ul class="chat__list">
         <li class="chat__item">
-            <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
-            <p>Sigmalion Sigmov</p>
+            <button class="chat__btn" id="person1">
+                <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
+                <p>Emma</p>
+            </button>
+        </li>
+        <li class="chat__item">
+            <button class="chat__btn" id="person2">
+                <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
+                <p>Pesho</p>
+            </button>
         </li>
     </ul>
     <div class="chat__window">
-        <ul class="chat__messages">
-            <li class="chat__message_y">
-                <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
-                <p>Hey, how are you?</p>
-            </li>
+        <ul class="chat__messages" id="chatMessages">
             <li class="chat__message_o">
-                <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
-                <p>Fine, you?</p>
+                <p class="sender">Emma</p>
+                <p class="chat__message_text">Hello, how are you?</p>
+                <p class="chat__message_time">12:30</p>
             </li>
             <li class="chat__message_y">
-                <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
-                <p>Same, you got plans for tonight?</p>
-            </li>
-            <li class="chat__message_o">
-                <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
-                <p>No, wanna hangout?</p>
-            </li>
-            <li class="chat__message_y">
-                <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
-                <p>Yes, I'll call you in a minute.</p>
+                <p class="sender">Pesho</p>
+                <p class="chat__message_text">Fine, you?</p>
+                <p class="chat__message_time">12:31</p>
             </li>
         </ul>
         <form class="chat__form">
-            <input type="text" class="chat__input" placeholder="Type a message...">
+            <input type="text" class="chat__input" placeholder="Type a message..." required>
             <button class="chat__button" type="submit">Send</button>
         </form>
     </div>
+
+    <script src="/static/JavaScript/chatSystem.js"></script>
 </body>
 </html>
