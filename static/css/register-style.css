@@ -65,11 +65,7 @@ h1{
     font-size: 1.8rem;
 }
 header{
-    background-color: rgb(252, 252, 252);
-    
-}
-.header a:visited,a:active,a:link{
-    color: black !important;
+    background-color:#36393F;
 }
 .header__content {
     display: flex;
@@ -84,7 +80,6 @@ header{
 }
 a {
     text-decoration: none;
-    color: black;
     font-size: 1.1rem;
 }
 .Logo {
