@@ -8,7 +8,7 @@ for (let i = 0; i < links.length; i++) {
         });
 };
 function animateLinkson(link) {
-    link.style.textDecorationColor = "whitesmoke";
+    link.style.textDecorationColor = "#1FD988";
     link.style.textDecorationThickness = "0.15rem";
     console.log('hovered');
 };
