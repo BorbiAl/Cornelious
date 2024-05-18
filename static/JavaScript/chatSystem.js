@@ -1,35 +1,52 @@
-const person1selector = document.getElementById("person1");
-const person2selector = document.getElementById("person2");
-const chatMessages = document.querySelector(".chat__messages");
-const chatForm = document.querySelector(".chat__form");
-const chatInput = document.querySelector(".chat__input");
-
-const messageElement = (message) => `
-    <li class="chat__message_${message.sender === "Emma" ? "y" : "o"}">
-        <p class="sender">${message.sender}</p>
-        <p class="chat__message_text">${message.text}</p>
-        <p class="chat__message_time">${message.time}</p>
-    </li>
+const johnSelectorBtn = document.getElementById('john-selector')
+const janeSelectorBtn = document.getElementById('jane-selector')
+const chatMessages = document.getElementById('chat-messages')
+const chatInputForm = document.getElementById('chat-input-form')
+const chatInput = document.getElementById('chat-input')
+const messages = JSON.parse(localStorage.getItem('messages')) || []
+let messageSender = 'John'
+const createChatMessageElement = (message) => `
+    <div class="message ${message.sender === messageSender ? 'you-bg' : 'other-bg'}">
+        <div class="message-sender">${message.sender}</div>
+        <div class="message-text">${message.text}</div>
+        <div class="message-timestamp">${message.timestamp}</div>
+    </div>
 `
-const sendername = "Emma"
-const updatesender = (name) => {
-    sendername = name;
-    chatInput.placeholder = "Type a message, ${sendername}...";
-    chatInput.focus();
+window.onload = () => {
+    updateMessageSender(messageSender)
 }
-
-person1selector.addEventListener("click", () => updatesender("Emma"));
-person2selector.addEventListener("click", () => updatesender("Pesho"));
-
-const sendMessage = (e) => {
-    e.preventDefault();
-    const time = new Date().toLocaleTimeString();
-    const message = {
-        sender: sendername,
-        text: chatInput.value,
-        time,
+const updateMessageSender = (name) => {
+    messageSender = name
+    chatInput.placeholder = `Type here, ${name}...`
+    if (name === 'John') {
+        johnSelectorBtn.classList.add('active')
+        janeSelectorBtn.classList.remove('active')
     }
-    chatMessages.innerHTML += messageElement(message);
+    if (name === 'Jane') {
+        janeSelectorBtn.classList.add('active')
+        johnSelectorBtn.classList.remove('active')
+    }
+    chatInput.focus()
+    chatMessages.innerHTML = ""
+    messages.forEach((message) => {
+        chatMessages.innerHTML += createChatMessageElement(message)
+    })
+    chatMessages.scrollTop = chatMessages.scrollHeight
 }
-
-chatForm.addEventListener("submit", sendMessage);
+johnSelectorBtn.onclick = () => updateMessageSender('John')
+janeSelectorBtn.onclick = () => updateMessageSender('Jane')
+const sendMessage = (e) => {
+    e.preventDefault()
+    const timestamp = new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+    const message = {
+        sender: messageSender,
+        text: chatInput.value,
+        timestamp,
+    }
+    messages.push(message)
+    localStorage.setItem('messages', JSON.stringify(messages))
+    chatMessages.innerHTML += createChatMessageElement(message)
+    chatInputForm.reset()
+    chatMessages.scrollTop = chatMessages.scrollHeight
+}
+chatInputForm.addEventListener('submit', sendMessage)

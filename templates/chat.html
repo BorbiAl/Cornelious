@@ -7,39 +7,19 @@
     <title>Chat</title>
 </head>
 <body>
-    <ul class="chat__list">
-        <li class="chat__item">
-            <button class="chat__btn" id="person1">
-                <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
-                <p>Emma</p>
-            </button>
-        </li>
-        <li class="chat__item">
-            <button class="chat__btn" id="person2">
-                <img class="pfp" src="/static/images/pfp.png" alt="Profile picture">
-                <p>Pesho</p>
-            </button>
-        </li>
-    </ul>
-    <div class="chat__window">
-        <ul class="chat__messages" id="chatMessages">
-            <li class="chat__message_o">
-                <p class="sender">Emma</p>
-                <p class="chat__message_text">Hello, how are you?</p>
-                <p class="chat__message_time">12:30</p>
-            </li>
-            <li class="chat__message_y">
-                <p class="sender">Pesho</p>
-                <p class="chat__message_text">Fine, you?</p>
-                <p class="chat__message_time">12:31</p>
-            </li>
-        </ul>
-        <form class="chat__form">
-            <input type="text" class="chat__input" placeholder="Type a message..." required>
-            <button class="chat__button" type="submit">Send</button>
+    <div class="person-selector">
+        <button class="button person-selector-button active" id="john-selector">John</button>
+        <button class="button person-selector-button" id="jane-selector">Jane</button>
+    </div>
+    <div class="chat-container">
+        <div class="chat-messages" id="chat-messages">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <form class="chat-input-form" id="chat-input-form">
+            <input type="text" class="chat-input" id="chat-input" required placeholder="Type here, ???..." />
+            <button type="submit" class="button send-button">Send</button>
         </form>
     </div>
-
     <script src="/static/JavaScript/chatSystem.js"></script>
 </body>
 </html>
