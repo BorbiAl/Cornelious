@@ -17,3 +17,7 @@ function animateLinksoff(link) {
     link.style.textDecorationThickness = "0px";
     console.log('unhovered');
 };
+window.onload = function() {
+    var box1 = document.querySelector('.box1');
+    box1.classList.add('show');
+  }
