@@ -26,9 +26,12 @@ body{
     width: 18%;
 }
 .person-selector-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 95%;
     margin-top: 1em;
-    background-color: #15202b;
+    background-color: #3d5365;
     color: #fff;
     font-size: 1.1em;
 }
@@ -117,9 +120,16 @@ body{
     width: 3em;
     height: 3em;
     margin-top: 0.5em;
+    margin-bottom: 0.5em;
     margin-left: calc(100% - 3.5em);
 }
 .call-icon {
     width: 1.5em;
     height: 1.5em;
+}
+.pfp {
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 10em;
 }

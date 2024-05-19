@@ -5,7 +5,7 @@ const person2Name = document.getElementById('person2-selector').textContent
 const chatMessages = document.getElementById('chat-messages')
 const chatInputForm = document.getElementById('chat-input-form')
 const chatInput = document.getElementById('chat-input')
-const messages = []
+const messages = JSON.parse(localStorage.getItem('messages')) || []
 let messageSender = person2Name
 const createChatMessageElement = (message) => `
     <div class="message ${message.sender === messageSender ? 'you-bg' : 'other-bg'}">

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/call-style.css">
+    <title>Call</title>
+</head>
+<body>
+    <div class="call-container">
+        <p class="info" id="info">You are muted</p>
+        <div class="members">
+            <div class="member">
+                <img class="pfp" src="/static/images/pfp.png">
+                <p class="member-name">Simeon</p>
+                <img class="mic-icon-m" src="/static/images/unmute.png">
+            </div>
+            <div class="member">
+                <img class="pfp" src="/static/images/pfp.png">
+                <p class="member-name">Vasil</p>
+                <img class="mic-icon-m" src="/static/images/mute.png">
+            </div>
+        </div>
+        <div class="focus">
+            <p class="focus-name">Simeon</p>
+            <img class="mic-icon" src="/static/images/unmute.png">
+        </div>
+        <div class="call-buttons">
+            <button class="button mute-button" id="mute-button">
+                <img class="mute-icon-b" id="mute-button-icon" src="/static/images/unmute.png">
+            </button>
+            <a href="/templates/chat.html"><button class="button hangup-button" id="hangup-button"><img class="hangup-icon" src="/static/images/hangup.png"></button></a>
+        </div>
+    </div>
+    <script src="/static/JavaScript/callSystem.js"></script>
+</html>

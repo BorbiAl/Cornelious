@@ -1,0 +1,122 @@
+body{
+    background-image:url("../images/background.png");
+    background-size: 50%;
+}
+.info {
+    font-size: 1em;
+    font-weight: bold;
+    color: #1FD988;
+}
+.button {
+    border: none;
+    padding: 0.625em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.button:hover {
+    filter: brightness(0.9);
+}
+.button:active {
+    transform: translateY(2px);
+}
+.call-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #15202b;
+    border-radius: 1em;
+    font-family: 'Roboto', sans-serif;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 98vh;
+}
+.members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-left: 80%;
+    width: 20%;
+    height: 100%;
+}
+.member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1FD988;
+    border-radius: 1em;
+    width: 10em;
+    height: 10em;
+}
+.pfp {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin-top: 1em;
+}
+.mic-icon-m, .mute-icon-m {
+    position: absolute;
+    width: 1.5em;
+    height: auto;
+    margin-top: 7em;
+    margin-left: 8em;
+}
+.focus {
+    position: absolute;
+    border-radius: 1em;
+    width: 70em;
+    height: 39.375em;
+    margin-top: 9em;
+    margin-right: 20em;
+    background: #1FD988;
+}
+.focus-name {
+    position: absolute;
+    font-size: 1.5em;
+    margin-top: 52%;
+    margin-left: 1em;
+}
+.mic-icon, .mute-icon {
+    position: absolute;
+    width: 2%;
+    height: auto;
+    margin-left: 96%;
+    margin-top: 52%;
+}
+.call-buttons {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 7%;
+    width: 100%;
+    margin-top: 45%;
+}
+.hangup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d5365;
+    width: 3em;
+    height: 3em;
+}
+.hangup-icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+.mute-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d5365;
+    width: 3em;
+    height: 3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.mute-icon-b {
+    width: 1.5em;
+    height: auto;
+}
