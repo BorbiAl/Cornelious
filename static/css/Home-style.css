@@ -71,7 +71,7 @@ a {
 }
 .textbox {
     position: absolute;
-    top: 40%;
+    top: 34%;
     right: 1rem;
     padding: 2rem;
     background-color: #f0f0f000;
@@ -85,7 +85,7 @@ a {
 }
 .box2{
     border-radius: 13%;
-    margin-top: 6rem;
+    margin-top: 7rem;
     background: #595959;
     position: absolute;
     top: 110%;
@@ -94,7 +94,6 @@ a {
     height: 45rem;
     width: 85rem;
     transition: all 0.5s ease-in-out;
-    margin-bottom: 10%;
 }
 .header-link{
     text-decoration: underline;
@@ -111,15 +110,98 @@ a {
 }
 .textbox2 {
     position: absolute;
-    top: 40%;
+    top: 30%;
     right: 1;
+    left: 10%;
     padding: 2rem;
     background-color: #f0f0f000;
 }
 .image2 {
     position: absolute;
-    top: 30%;
-    right: 1rem;
-    height: 55vh;
+    top: 22%;
+    right: 10%;
+    height: 65vh;
     border-radius: 10%;
+}
+.box3{
+    border-radius: 13%;
+    margin-top: 1rem;
+    background: #595959;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 45rem;
+    width: 85rem;
+    transition: all 0.5s ease-in-out;
+
+}
+.textbox3 {
+    position: absolute;
+    top: 40%;
+    right: 1rem;
+    padding: 2rem;
+    background-color: #f0f0f000;
+}
+.image3 {
+    position: absolute;
+    top: 15%;
+    left: 1rem;
+    height: 70vh;
+    border-radius: 10%;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding-bottom: 1rem;
+    position:relative;
+    bottom:0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    position: absolute;
+    top: calc(100% + 45rem);
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 73%;
+    width: 100%;
+    height: fit-content;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600rem;
+    margin: 0 auto;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .textbox3 {
+    position: absolute;
+    top: 34%;
+    right: 5rem;
+    padding: 2rem;
+    background-color: #f0f0f000;
 }
