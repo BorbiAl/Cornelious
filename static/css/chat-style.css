@@ -1,3 +1,7 @@
+body{
+    background-image:url("../images/background.png");
+    background-size: 50%;
+}
 .button {
     border: none;
     padding: 0.625em;
@@ -11,14 +15,19 @@
     transform: translateY(2px);
 }
 .person-selector {
+    position: absolute;
     display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin: 3em auto 1em;
-    max-width: 40em;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #15202b;
+    height: 99%;
+    border-radius: 1em;
+    width: 18%;
 }
 .person-selector-button {
-    width: 100%;
+    width: 95%;
+    margin-top: 1em;
     background-color: #15202b;
     color: #fff;
     font-size: 1.1em;
@@ -28,18 +37,16 @@
     box-shadow: 0 0 0.5em 0.1em #c3c3c333;
 }
 .chat-container {
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background: #15202b;
+    border-radius: 1em;
     font-family: 'Roboto', sans-serif;
-    border-radius: 0.5em;
-    margin-top: 1em;
-    padding: 0.5em 1.25em;
-    margin: auto;
-    max-width: 37.5em;
-    height: 37.5em;
-    box-shadow: 0 0 1.25em 0.5em #c3c3c333;
+    width: 80%;
+    margin-left: 19%;
+    height: 99%;
 }
 .chat-messages {
     height: 90%;
@@ -51,7 +58,7 @@
 .message {
     padding: 0.625em;
     border-radius: 1em;
-    margin-bottom: 0.625em;
+    margin-top: 0.625em;
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -62,7 +69,7 @@
 }
 .message-text {
     font-size: 1em;
-    margin-bottom: 0.31em;
+    padding-top: 0.31em;
     word-wrap: break-word;
 }
 .message-timestamp {
@@ -71,16 +78,20 @@
 }
 .you-bg {
     background-color: #1FD988;
-    margin-left: 30%;
+    width: 50%;
+    margin-left: 48%;
 }
 .other-bg {
     background-color: #3d5365;
-    margin-right: 30%;
+    width: 50%;
+    margin-left: 1%;
 }
 .chat-input-form {
     display: flex;
     align-items: center;
     height: 10%;
+    width: 95%;
+    margin-left: 2%;
     gap: 0.625em;
 }
 .chat-input {
@@ -97,4 +108,18 @@
     color: #fff;
     font-size: 1em;
     font-weight: bold;
+}
+.call-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d5365;
+    width: 3em;
+    height: 3em;
+    margin-top: 0.5em;
+    margin-left: calc(100% - 3.5em);
+}
+.call-icon {
+    width: 1.5em;
+    height: 1.5em;
 }

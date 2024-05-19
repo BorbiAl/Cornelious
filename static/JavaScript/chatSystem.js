@@ -19,12 +19,12 @@ const updateMessageSender = (name) => {
     messageSender = name
     chatInput.placeholder = `Type here, ${name}...`
     if (name === 'John') {
-        johnSelectorBtn.classList.add('active')
-        janeSelectorBtn.classList.remove('active')
+        johnSelectorBtn.classList.remove('active')
+        janeSelectorBtn.classList.add('active')
     }
     if (name === 'Jane') {
-        janeSelectorBtn.classList.add('active')
-        johnSelectorBtn.classList.remove('active')
+        janeSelectorBtn.classList.remove('active')
+        johnSelectorBtn.classList.add('active')
     }
     chatInput.focus()
     chatMessages.innerHTML = ""
@@ -33,8 +33,8 @@ const updateMessageSender = (name) => {
     })
     chatMessages.scrollTop = chatMessages.scrollHeight
 }
-johnSelectorBtn.onclick = () => updateMessageSender('John')
-janeSelectorBtn.onclick = () => updateMessageSender('Jane')
+johnSelectorBtn.onclick = () => updateMessageSender('Jane')
+janeSelectorBtn.onclick = () => updateMessageSender('John')
 const sendMessage = (e) => {
     e.preventDefault()
     const timestamp = new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
