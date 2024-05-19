@@ -58,7 +58,7 @@ a {
 }
 
 .box1{
-    border-radius: 13%;
+    border-radius: 4vw;
     margin-top: 6rem;
     background: #595959;
     position: absolute;
@@ -84,7 +84,7 @@ a {
     border-radius: 10%;
 }
 .box2{
-    border-radius: 13%;
+    border-radius: 4vw;
     margin-top: 7rem;
     background: #595959;
     position: absolute;
@@ -124,7 +124,7 @@ a {
     border-radius: 10%;
 }
 .box3{
-    border-radius: 13%;
+    border-radius: 4vw;
     margin-top: 1rem;
     background: #595959;
     position: absolute;
